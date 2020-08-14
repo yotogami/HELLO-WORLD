@@ -3,7 +3,8 @@
 	<info>
 		<name>Gremlin</name>
 		<description></description>
-	    <update version="1.0">
+		<author url="https://www.dandwiki.com/wiki/Beholderborn_(5e_Race)">dandwiki</author>
+	    	<update version="1.0">
 			<file name="race-gremlin.xml" url="https://github.com/yotogami/HELLO-WORLD/blob/master/race-gremlin.xml"/>
 		</update>
 	</info>
