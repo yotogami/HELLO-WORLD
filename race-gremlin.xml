@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gremlin</name>
+		<description></description>
+	    <update version="1.0">
+			<file name="race-gremlin.xml" url=""/>
+		</update>
+	</info>
+
+  <element name="Gremlin" type="Race" source="HMBRW" id="ID_HMBRW_RACE_Gremlin">
+    <description>
+        <h4>Physical Description</h4>
+        <p>Gremlins are small wrinkled tricksters and tinkerers known for their aptitude at both building and destroying technology. They can easily be distinguished from their gnomish cousins by their long gangly limbs and nearly comical long pointed ears. They usually have long shocks of white hair if they haven’t shaved it off, and have skin resembling polished leather, though some gremlins’ skin comes in unusual hues of blue or green. Gremlins like to find themselves in cities where they can both create their toys and cause mischief with other inventions.</p>
+
+        <h4>Society</h4>
+        <p>
+        <span class="feature">Tricksters by Nature.</span>Gremlins are known for being devious and crafty, accomplishing great feats of ingenuity against seemingly all odds. They delight in creating minor misfortunes that direct others onto a path to aggravation. They have been known to ride the sides of wagons and remove the lug while remaining unseen, plug the flow of lamp oil to cause lamps to go dark, and climb the insides of forge chimneys to completely block the flow of air, filling the forge with thick clouds of smoke and sending the whole work crew fleeing.<br/>
+        <span class="feature">Building and Breaking.</span>Gremlins are skilled crafters of many gadgets and gizmos. They share much in common with the gnomes this way, building clockwork creations and eye-catching mechanical wonders. Gremlins have been known to make clocks, moving animals, wind-up tops, and many other incredible devices requiring canny feats of engineering. The only trouble is, they’re just as fond of breaking things as they are building them. Though many humans ascribe this to malice, it’s more often just due to curiosity: most gremlins just want to see how things work so they can make one that’s even better! Nevertheless, the human prejudice remains, and gremlins are often blamed for unrelated mishaps because of the belief that they sabotage other crafters’ work out of jealousy, anger, or boredom.<br/>
+        <span class="feature">Dizzying Intellect.</span> Gremlins have sharp minds that they use in often unexpected ways. To a gremlin, a particularly clever prank may be worth playing out over more than a decade, or it might be concluded in the blink of an eye. Gremlins are not vengeful per se, but they never forget a slight nor forgive it. If a gremlin feels someone has slighted or made a fool of them, they ensure the offender never forgets who is the real fool.<br/>
+        </p>
+
+        <h4>Gremlin Traits</h4>
+        <p>Gremlins are small wrinkled tricksters and tinkerers known for their aptitude at both building and destroying technology</p> 
+        <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 2 and Charisma increases by 1.<br/>
+        <span class="feature">Age.</span>Gremlins mature quickly, reaching adulthood by 16. They usually live short, chaotic lives, but can be as old as 250.<br/>
+        <span class="feature">Alignment</span> Like most fey, gremlins are chaotic in nature and prefer to be in situations that are unpredictable with elements of danger. They do not tend towards neutrality, but can be either good or evil.<br/>
+        <span class="feature">Size.</span>Gremlins are Small creatures, standing between 2 and half to 3 feet tall. They generally weigh about 30 pounds.<br/>
+        <span class="feature">Type.</span>Fey<br/> 
+        <span class="feature">Speed.</span>Your base walking speed is 25 feet.<br/>
+        <span class="feature">Darkvision.</span>Accustomed to living life in the twilight conditions of the Feywild, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
+        <span class="feature">Aura of Misfortune.</span>As a gremlin, you bring bad luck with you and wear it like a shield. You have a pool of 3 luck points. Whenever an attack, skill check, or save is made within 60 feet of you, you may spend a luck point to give it disadvantage. If multiple luck points are spent to influence the same roll they cancel each other out—no extra dice are rolled. You regain your luck points after completing a long rest.<br/>
+        <span class="feature">Fey Magic.</span>You know the minor illusion cantrip. When you reach 3rd level, you can cast the grease spell once per day. When you reach 5th level, you can also cast pass without trace once per day. Intelligence is your spellcasting ability for these spells.<br/>
+        <span class="feature">Fey Ancestry.</span>You have advantage on saving throws against being charmed and magic can’t put you to sleep.<br/>
+    </description>
+    <sheet display="false"/>
+    <setters>
+        <set name="height" modifier="2d8">2'0"</set>
+        <set name="weight" modifier="2d6">25 lb.</set>
+    </setters>
+    <rules>
+        <stat name="Intelligence" value="2"/>
+        <stat name="Charisma" value="1"/>
+        <stat name="innate speed" value="25" bonus="base"/>
+        <grant type="Vision" id="ID_VISION_DARKVISION" />
+        <grant type="Racial Trait" id="ID_HMBRW_Aura_of_Misfortune" />
+        <grant type="Racial Trait" id="ID_HMBRW_Fey_Magic" />
+        <grant type="Racial Trait" id="ID_HMBRW_Fey_Ancestry" />
+        <grant type="Size" id="ID_SIZE_SMALL" />
+        <grant type="Language" id="ID_LANGUAGE_COMMON" />
+        <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+    </rules>
+  </element>
+  
+  <element name="Aura of Misfortune" type="Racial Trait" source="HMBRW" id="ID_HMBRW_Aura_of_Misfortune">
+    <description>
+      <p>As a gremlin, you bring bad luck with you and wear it like a shield.</p>
+    </description>
+    <sheet>
+      <description>You have a pool of 3 luck points. Whenever an attack, skill check, or save is made within 60 feet of you, you may spend a luck point to give it disadvantage. If multiple luck points are spent to influence the same roll they cancel each other out—no extra dice are rolled. You regain your luck points after completing a long rest.</description>
+    </sheet>
+  </element>
+  <element name="Fey Magic" type="Racial Trait" source="HMBRW" id="ID_HMBRW_Fey_Magic">
+    <description>
+      <p><h5 class="caption">Fey Magic Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>minor illusion cantrip</em></td></tr>
+				<tr><td>3rd</td><td><em>grease spell(once per day)</em></td></tr>
+				<tr><td>5th</td><td><em>pass without trace(once per day)</em></td></tr>
+			</table>
+	</description></p>
+    <sheet>
+      <description>You know the minor illusion cantrip. When you reach 3rd level, you can cast the grease spell once per day. When you reach 5th level, you can also cast pass without trace once per day. Intelligence is your spellcasting ability for these spells.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" level="1" />
+      <grant type="Spell" id="ID_PHB_SPELL_GREASE" level="3" />
+      <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5" />
+    </rules>
+  </element>
+  <element name="Fey Ancestry" type="Racial Trait" source="homebrew" id="ID_HMBRW_Fey_Ancestry">
+   <description>
+      <p>You have advantage on saving throws against being charmed and magic can’t put you to sleep.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against being charmed and magic can’t put you to sleep.</description>
+    </sheet>
+  </element>
+
+</elements>
+ 
