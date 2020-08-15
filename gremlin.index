@@ -1,0 +1,16 @@
+  
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>r/DnD</name>
+		<update version="0.0.1">
+			<file name="gremlin.index" url="github.com/yotogami/HELLO-WORLD/blob/master/gremlin.index" />
+		</update>
+	</info>
+	<files>
+		<file name="race-gremlin.xml" url="https://github.com/yotogami/HELLO-WORLD/blob/master/race-gremlin.xml" />
+	
+		<!-- Race -->
+		<file name="race-gremlin.xml" url="https://github.com/yotogami/HELLO-WORLD/blob/master/race-gremlin.xml" />
+	</files>
+</index>
